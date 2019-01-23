@@ -11,10 +11,7 @@ let gWin = 0;
 // Prompt the User
 let input = prompt("Wanna play?");
 
-//No
-if (input === "no") {
-  console.log("Fine. Later Gator.")
-}
+
 //Yes - Ask For Name
 if (input === "yes") {
     player = prompt("Name?");
@@ -40,14 +37,15 @@ if (input === "yes") {
       else {
         gWin += 1;
       }
+    } if (uWin === 3) {
+      //We Win
+      console.log(`${player} wins!`);
     }
+    // No
+  } else if (input === "no") {
+    console.log("Fine. Later Gator.")
+  } else {
+    //Grant Wins
+    console.log(`Grant wins. Loser.`);
   }
-
-if (uWin === 3) {
-  //We Win
-  console.log(`${player} wins!`);
-} else {
-  //Grant Wins
-  console.log(`Grant wins. Loser.`);
-}
 
