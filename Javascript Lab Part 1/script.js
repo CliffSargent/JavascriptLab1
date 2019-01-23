@@ -41,7 +41,7 @@ if (input === "yes") {
       //We Win
       console.log(`${player} wins!`);
     }
-    // No
+    // Player says 'No'
   } else if (input === "no") {
     console.log("Fine. Later Gator.")
   } else {
